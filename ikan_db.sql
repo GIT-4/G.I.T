@@ -928,7 +928,7 @@ ALTER TABLE `transaksi_pakan`
 --
 ALTER TABLE `transaksi_pendanaan`
   ADD CONSTRAINT `transaksi_pendanaan_ibfk_1` FOREIGN KEY (`id_penambak`) REFERENCES `penambak` (`id`),
-  ADD CONSTRAINT `transaksi_pendanaan_ibfk_2` FOREIGN KEY (`id_modal`) REFERENCES `penambak` (`id`);
+  ADD CONSTRAINT `transaksi_pendanaan_ibfk_2` FOREIGN KEY (`id_modal`) REFERENCES `modal` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
@@ -1047,8 +1047,7 @@ MariaDB [ikan_db]> select*from transaksi_investor;
 +----+-------------+---------+------------------+---------------------+
 1 row in set (0.00 sec)
 
-MariaDB [ikan_db]> select*from benih
-    -> ;
+MariaDB [ikan_db]> select*from benih;
 +----+---------------+
 | id | id_benih_ikan |
 +----+---------------+
